@@ -10,7 +10,7 @@ $ yarn add react-router-menu
 
 ## Basic
 
-```ts
+```tsx
 import * as React from 'react'
 import { render } from 'react-router'
 import { createReactRouterMenu } from 'react-router-menu'
