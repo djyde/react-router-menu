@@ -5,7 +5,7 @@
     "storybook": "start-storybook -c .storybook -p 9001",
     "storybook:build": "build-storybook -c .storybook -o docs",
     "test": "jest",
-    "build": "rimraf dist && tsc && npm run storybook:build"
+    "build": "rimraf dist && npm test && tsc && npm run storybook:build"
   },
   "main": "dist/index.js",
   "files": [
