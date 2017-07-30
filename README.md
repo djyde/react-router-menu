@@ -1,12 +1,22 @@
+# react-router-menu
+
+React Router binding for Ant.Design's Menu.
+
+## Install
+
+```bash
+$ yarn add react-router-menu
+```
+
+## Basic
+
+```ts
 import * as React from 'react'
-import { storiesOf } from '@storybook/react'
-import {
-  createReactRouterMenu
-} from '../src'
+import { render } from 'react-router'
+import { createReactRouterMenu } from 'react-router-menu'
 import { Router, hashHistory } from 'react-router'
 
-declare var module
-
+// declare a plain route
 const routes = {
   title: 'App',
   path: '/',
@@ -17,6 +27,7 @@ const routes = {
   ]
 }
 
+// App component 
 function App ({ children }) {
   const ReactRouterMenu = createReactRouterMenu(routes)
   return (
@@ -29,10 +40,17 @@ function App ({ children }) {
   )
 }
 
-storiesOf('ReactRouterMenu', module)
-  .add('Basic', () => {
-    return (
-      <Router history={hashHistory} routes={routes}>
-      </Router>
-    )
-  })
+// render the router
+render((
+  <Router history={hashHistory} routes={routes}>
+  </Router>
+), mountNode)
+```
+
+## <ReactRouterMenu />
+
+This component is same as Ant Design's [<Menu />](https://ant.design/components/menu)
+
+# License
+
+MIT License
