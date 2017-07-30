@@ -2,6 +2,12 @@
 
 React Router binding for Ant.Design's Menu.
 
+[![npm](https://img.shields.io/npm/dm/react-router-menu.svg)](https://www.npmjs.com/package/react-router-menu)
+[![npm](https://img.shields.io/npm/v/react-router-menu.svg)](https://www.npmjs.com/package/react-router-menu)
+[![CircleCI](https://circleci.com/gh/djyde/react-router-menu.svg?style=svg)](https://circleci.com/gh/djyde/react-router-menu)
+[![react-router](https://img.shields.io/badge/react--router-v3.x-green.svg)](https://github.com/ReactTraining/react-router/blob/v3/)
+[![antd](https://img.shields.io/badge/antd-v2.x-yellowgreen.svg)](https://github.com/ant-design/ant-design)
+
 ## Install
 
 ```bash
