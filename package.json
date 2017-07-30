@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "scripts": {
     "storybook": "start-storybook -c .storybook -p 9001",
-    "storybook:build": "build-storybook -c .storybook -o doc",
+    "storybook:build": "build-storybook -c .storybook -o docs",
     "build": "rimraf dist && tsc && npm run storybook:build"
   },
   "main": "dist/index.js",
@@ -25,5 +25,19 @@
     "react-dom": "^15.6.1",
     "rimraf": "^2.6.1",
     "typescript": "^2.4.2"
-  }
+  },
+  "description": "React Router binding for Ant.Design's Menu.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/djyde/react-router-menu.git"
+  },
+  "keywords": [
+    "react-router",
+    "antd"
+  ],
+  "author": "Randy <randypriv@gmail.com>",
+  "bugs": {
+    "url": "https://github.com/djyde/react-router-menu/issues"
+  },
+  "homepage": "https://github.com/djyde/react-router-menu#readme"
 }
