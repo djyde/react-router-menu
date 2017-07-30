@@ -47,7 +47,7 @@ render((
 ), mountNode)
 ```
 
-## <ReactRouterMenu />
+## `<ReactRouterMenu />`
 
 This component is same as Ant Design's [<Menu />](https://ant.design/components/menu)
 
