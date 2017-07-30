@@ -26,6 +26,9 @@ const createMenuItem = (route: IReactRouterMenuRoute) => {
     console.warn('getChildRoutes and getIndexRoute are not supported yet.')
     return
   }
+  if (route.path === '/') {
+    return createMenuItemFromRoutes(route.childRoutes)
+  }
   if (!route.childRoutes && !route.getChildRoutes) {
     return (
       <MenuItem key={route.path}>
@@ -49,7 +52,7 @@ const createMenuItemFromRoutes = (childRoutes: IReactRouterMenuRoute[] = []) => 
   })
 }
 
-export const createReactRouterMenu = (route: IReactRouterMenuRoute) => { 
+export const createReactRouterMenu = (route: IReactRouterMenuRoute) => {
   const r = createMenuItem(route)
   return (props: MenuProps) => (
     <Menu {...props}>
@@ -57,4 +60,3 @@ export const createReactRouterMenu = (route: IReactRouterMenuRoute) => {
     </Menu>
   )
 }
-
