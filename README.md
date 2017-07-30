@@ -10,6 +10,8 @@ $ yarn add react-router-menu
 
 ## Basic
 
+Live demo: https://djyde.github.io/react-router-menu/
+
 ```tsx
 import * as React from 'react'
 import { render } from 'react-router'
