@@ -3,7 +3,8 @@
   "version": "0.0.0",
   "scripts": {
     "storybook": "start-storybook -c .storybook -p 9001",
-    "build": "rimraf dist && tsc"
+    "storybook:build": "build-storybook -c .storybook -o .storybook-out",
+    "build": "rimraf dist && tsc && npm run storybook:build"
   },
   "main": "dist/index.js",
   "files": [
