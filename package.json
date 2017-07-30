@@ -4,6 +4,7 @@
   "scripts": {
     "storybook": "start-storybook -c .storybook -p 9001",
     "storybook:build": "build-storybook -c .storybook -o docs",
+    "test": "jest",
     "build": "rimraf dist && tsc && npm run storybook:build"
   },
   "main": "dist/index.js",
@@ -13,17 +14,37 @@
   "dependencies": {
     "react-router": "^3.0.5"
   },
+  "jest": {
+    "transform": {
+      "^.+\\.tsx?$": "<rootDir>/node_modules/ts-jest/preprocessor.js"
+    },
+    "setupTestFrameworkScriptFile": "<rootDir>/test/setup.js",
+    "testRegex": "(/__tests__/.*|\\.(test|spec))\\.(tsx?|jsx?)$",
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js",
+      "json",
+      "jsx"
+    ]
+  },
   "license": "MIT",
   "devDependencies": {
     "@storybook/react": "^3.1.9",
+    "@types/enzyme": "^2.8.4",
+    "@types/jest": "^20.0.5",
     "@types/react": "^15.6.0",
     "@types/react-dom": "^15.5.1",
     "@types/react-router": "^3.0.5",
     "antd": "^2.12.2",
     "awesome-typescript-loader": "^3.2.2",
+    "enzyme": "^2.9.1",
+    "jest": "^20.0.4",
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
+    "react-test-renderer": "^15.6.1",
     "rimraf": "^2.6.1",
+    "ts-jest": "^20.0.7",
     "typescript": "^2.4.2"
   },
   "description": "React Router binding for Ant.Design's Menu.",

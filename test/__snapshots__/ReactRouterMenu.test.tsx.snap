@@ -1,0 +1,34 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`createReactRouterMenu snapshot 1`] = `
+<div>
+  <ul
+    aria-activedescendant=""
+    className="ant-menu ant-menu-horizontal ant-menu-light ant-menu-root"
+    onKeyDown={[Function]}
+    role="menu"
+    style={Object {}}
+    tabIndex="0"
+  >
+    <li
+      className="ant-menu-submenu-horizontal ant-menu-submenu"
+      onMouseEnter={[Function]}
+      onMouseLeave={[Function]}
+    >
+      <div
+        aria-expanded={false}
+        aria-haspopup="true"
+        aria-owns="/$Menu"
+        className="ant-menu-submenu-title"
+        onClick={[Function]}
+        onMouseEnter={[Function]}
+        onMouseLeave={[Function]}
+        style={Object {}}
+      >
+        App
+      </div>
+    </li>
+  </ul>
+  <div />
+</div>
+`;
