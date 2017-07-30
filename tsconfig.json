@@ -1,0 +1,24 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "allowSyntheticDefaultImports": true,
+    "strictNullChecks": true,
+    "rootDirs": [
+      "src",
+      "__story__"
+    ],
+    "jsx": "react",
+    "lib": [
+      "es5",
+      "es2015",
+      "dom",
+      "scripthost"
+    ]
+  },
+  "files": [
+    "__story__"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}

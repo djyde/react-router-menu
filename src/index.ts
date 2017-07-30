@@ -1,0 +1,1 @@
+export { createReactRouterMenu } from './ReactRouterMenu'
