@@ -47,6 +47,8 @@ render((
 ), mountNode)
 ```
 
+![](https://ws2.sinaimg.cn/large/006tKfTcgy1fi1y9djngdj309408gjrf.jpg)
+
 ## `<ReactRouterMenu />`
 
 This component is same as Ant Design's [<Menu />](https://ant.design/components/menu)
