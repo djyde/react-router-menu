@@ -20,6 +20,7 @@
   },
   "exclude": [
     "__story__",
+    "test",
     "node_modules"
   ]
 }
