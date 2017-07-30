@@ -1,12 +1,15 @@
 {
   "compilerOptions": {
     "target": "es5",
+    "module": "commonjs",
     "allowSyntheticDefaultImports": true,
     "strictNullChecks": true,
+    "declaration": true,
     "rootDirs": [
       "src",
       "__story__"
     ],
+    "outDir": "dist",
     "jsx": "react",
     "lib": [
       "es5",
@@ -15,10 +18,8 @@
       "scripthost"
     ]
   },
-  "files": [
-    "__story__"
-  ],
   "exclude": [
+    "__story__",
     "node_modules"
   ]
 }

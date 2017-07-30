@@ -9,8 +9,8 @@ import { LocationState } from "history"
 const MenuItem = Menu.Item
 const SubMenu = Menu.SubMenu
 
-type RouteCallback = (err: any, route: PlainRoute) => void
-type RoutesCallback = (err: any, routesArray: PlainRoute[]) => void
+export type RouteCallback = (err: any, route: PlainRoute) => void
+export type RoutesCallback = (err: any, routesArray: PlainRoute[]) => void
 
 export interface IReactRouterMenuRoute extends PlainRoute {
   path: string,

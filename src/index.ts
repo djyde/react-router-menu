@@ -1,1 +1,1 @@
-export { createReactRouterMenu } from './ReactRouterMenu'
+export { createReactRouterMenu, IReactRouterMenuRoute } from './ReactRouterMenu'

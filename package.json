@@ -2,8 +2,13 @@
   "name": "react-router-menu",
   "version": "0.0.0",
   "scripts": {
-    "storybook": "start-storybook -c .storybook -p 9001"
+    "storybook": "start-storybook -c .storybook -p 9001",
+    "build": "rimraf dist && tsc"
   },
+  "main": "dist/index.js",
+  "files": [
+    "dist"
+  ],
   "dependencies": {
     "react-router": "^3.0.5"
   },
@@ -11,11 +16,12 @@
     "@storybook/react": "^3.1.9",
     "@types/react": "^15.6.0",
     "@types/react-dom": "^15.5.1",
+    "@types/react-router": "^3.0.5",
     "antd": "^2.12.2",
     "awesome-typescript-loader": "^3.2.2",
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
-    "typescript": "^2.4.2",
-    "@types/react-router": "^3.0.5"
+    "rimraf": "^2.6.1",
+    "typescript": "^2.4.2"
   }
 }
